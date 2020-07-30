@@ -1,5 +1,8 @@
+/*import a font*/
+
 /* resets the default margin and padding values of all HTML elements */
 * {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
@@ -8,8 +11,243 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
-.title {
+.banner-container {
+	display: flex;
+	justify-content: center;
+}
+
+.banner {
+	height: 92vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 1.25%;
+}
+
+.banner .about,
+.banner .education,
+.banner .experience {
+	width: 33.333%;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+}
+
+.about {
 	/* border: 1px solid black; */
+	/* margin: 0.75% 0 0.75% 0%; */
+	background-image: url("../media/about.jpg");
+}
+
+
+.education {
+	/* margin: 0.75% 0.75% 0.75% 0.75%; */
+	background-image: url("../media/education.jpg");
+}
+
+.experience {
+	/* margin: 0.75% 0% 0.75% 0; */
+	background-image: url("../media/experience.jpg");
+}
+
+.about, .education, .experience {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+
+}
+
+.about h1, .education h1, .experience h1 {
+	color: white;
+	font-size: 30px;
+	margin-bottom: 10%;
+	position: absolute;
+}
+
+.overlay-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.overlay {
+	width: 0;
+	height: 100%;
+	transition: all 0.4s ease;
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+}
+
+.overlay-container:hover .overlay {
+	opacity: 1;
+	width: 100%;
+}
+
+.text {
+	color: white;
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+	.banner {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.banner .about,
+	.banner .education,
+	.banner .experience  {
+		width: 100%;
+		height: 33.333%;
+	}
+
+	.banner .about {
+		background-position: center top;
+	}
+
+	.banner .education {
+		background-position: 50% 25%;
+	}
+}
+
+
+/*  */
+/* <header> */
+/*  */
+
+/* header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 30px 30px;
+	border-bottom: 1px solid #bebebe ;
+	height: 10vh;
+}
+
+.logo {
+	font-weight: 1000;
+	font-size: 36px;
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+	margin-right: auto;
+}
+
+
+li, a, button {
+	font-weight: 500;
+	font-size: 16px;
+	color: black;
+	text-decoration: none;
+}
+
+.nav-links {
+	list-style: none;
+}
+
+.nav-links li {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+.nav-links li a {
+	transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+	color: #bebebe;
+}
+
+button {
+	color: white;
+	margin-left: 20px;
+	padding: 9px 25px;
+	background-color: rgba(0, 0, 0, 1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+button:hover {
+	background-color: rgba(190, 190, 190, 0.8);
+} */
+
+/*  */
+/* <div class="homepage"> */
+/*  */
+
+/* .homepage {
+	flex-grow: 1;
+	border: 2px solid black;
+	height: ;
+}
+
+.homepage .container {
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+	margin: 20px 20px;
+	border: 1px solid black;
+}
+
+.homepage .container div {
+	width: 23vw;
+	overflow: hidden;
+}
+
+.homepage .container div img {
+	height: 100%;
+}
+
+.text-wrapper {
+	width: 100%;
+	position: relative;
+	margin-top: -40%;
+}
+
+.text-wrapper h1 {
+	text-align: center;
+	color: white;
+	font-size: 2.5vw;
+} */
+
+
+
+
+
+
+
+
+/* .col img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+} */
+
+
+/*
+.about {
+	position: relative;
+	background-image: url("../media/about.jpg");
+	background-size: contain;
+	background-position: center center;
+
+} */
+
+
+
+
+
+/* .title {
+	border: 1px solid black;
 	font-size: 6.5rem;
 	font-weight: 1000;
 	text-align: left;
@@ -17,14 +255,14 @@ body {
 
 
 nav {
-	/* border: 1px solid black; */
+	border: 1px solid black;
 	text-align: left;
 	font-size: 1.5rem;
 	position: fixed;
 }
 
 nav a {
-	/* border: 1px solid black; */
+	border: 1px solid black;
 	display: block;
 	margin-left: 1rem;
 	margin-bottom: 1rem;
@@ -34,7 +272,6 @@ nav a {
 	color: white;	
 	transition-duration: 0.5s;
 	transition-property: color;
-	/* transition-property: all; */
 }
 
 a:hover {
@@ -42,7 +279,7 @@ a:hover {
 }
 
 .background {
-	/* border: 10px solid black; */
+	border: 10px solid black;
 	height: 100vh;
 	width: auto;
 	min-height: 748px;
@@ -57,12 +294,12 @@ a:hover {
 	z-index: -1;
 	height: auto;
 	width: 100%;
-}
+} */
 
-@media only screen and (max-width: 1008px) {
+/* @media only screen and (max-width: 1008px) {
 	.background img {
 		z-index: -1;
 		height: 100%;
 		width: auto;
 	}
-}
+} */
