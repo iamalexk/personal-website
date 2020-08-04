@@ -13,11 +13,15 @@ h1, h2, h3, h4 {
 }
 
 .education h1 {
-	font-size: 7.5vw;
+	font-size: 75px;
 }
 
 .education h2 {
-	font-size: 2vw;
+	font-size: 30px;
+}
+
+.education h3 {
+	font-size: 20px;
 }
 
 .education {
@@ -27,32 +31,90 @@ h1, h2, h3, h4 {
 	align-items: center;
 	flex-direction: column;
 	background-color: #00274C;
+	position: relative;
 }
 
 .title {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
 	height: 92vh;
+	background-color: #00274C;
 }
 
 .title h1{ 
 	border: 10px solid #FFCB05;
-	padding: 2.5%;
 	text-transform: uppercase;	
 	letter-spacing: 2px;
+	position: absolute;
+}
+
+.arrow {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-bottom: 10vh;
+
+}
+
+.arrow div {
+	margin: -0.25vh;
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-bottom: 3px solid white;
+	border-right: 3px solid white;
+	transform: rotate(45deg);
+	animation: animate 2.5s infinite;
+}
+
+.arrow div:nth-child(2) {
+	animation-delay: -0.2s;
+	transform: rotate(45deg) translate(-20px, -20px);
+
+}
+.arrow div:nth-child(3) {
+	animation-delay: -0.4s;
+}
+
+@keyframes animate {
+	0% {
+		opacity: 0;
+		transform: rotate(45deg) translate(-20px, -20px);
+
+	}
+	50% {
+		opacity: 1;
+
+	}
+	100% {
+		opacity: 0;
+		transform: rotate(45deg) translate(20px, 20px);
+
+	}
+}
+
+.resume {
+	width: 100%;
+	height: 92vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 0% 5%;
+	position: relative;
 }
 
 .schoolname {
-	width: 80%;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	margin: 0 10% 0 10%;
 	border-bottom: 5px solid #FFCB05;
-	/* border: 1px solid white; */
 }
 
 .location {
@@ -62,15 +124,14 @@ h1, h2, h3, h4 {
 }
 
 .info {
-	width: 80%;
+	width: 100%;
 	display: flex;
 	flex-flow: column;
 	justify-content: space-between;
-	padding-top: 30px;
 }
 
 .info div {
-	margin-bottom: 30px;
+	padding: 0.5% 0%;
 }
 
 .college {
@@ -84,28 +145,97 @@ h1, h2, h3, h4 {
 }
 
 .coursework-clubs-wrapper {
-	width: 80%;
-	/* border: 1px solid white; */
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 20vh;
 }
 
-.coursework-title,
-.clubs-title {
-	border-bottom: 1.25px solid #FFCB05;
+.coursework-clubs-wrapper h2 {
+	border-bottom: 2.5px solid #FFCB05;
+}
+
+.coursework,
+.clubs {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
+@media screen and (max-width: 1200px) {
+	.education h1 {
+		font-size: 70px;
+	}
+	
+	.education h2 {
+		font-size: 25px;
+	}
+	
+	.education h3 {
+		font-size: 17px;
+	}
+}
 
+@media screen and (max-width: 1050px) {
+	.education h1 {
+		font-size: 70px;
+	}
+	
+	.education h2 {
+		font-size: 25px;
+	}
+	
+	.education h3 {
+		font-size: 16px;
+	}
+	.title h1 {
+		border: 7.5px solid #FFCB05;
+	}
 
+}
 
+@media screen and (max-width: 1024px) {
+	.education h1 {
+		font-size: 6vh;
+	}
+	
+	.education h2 {
+		font-size: 2.5vh;
+	}
+	
+	.education h3 {
+		font-size: 2vh;
+	}
 
+	.coursework-clubs-wrapper {
+		flex-direction: column;
+	}
 
-/* .coursework, .clubs {
-	border: 1px solid black;
-} */
+	.coursework {
+		margin-bottom: 5%;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.education h1 {
+		font-size: 4vh;
+	}
+	
+	.education h2 {
+		font-size: 2.5vh;
+	}
+	
+	.education h3 {
+		font-size: 2.25vh;
+	}
+
+	.college {
+		flex-direction: column;
+	}
+
+	.title h1 {
+		border: 5px solid #FFCB05;
+	}
+}
 
 
 
