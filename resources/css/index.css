@@ -37,6 +37,7 @@ body {
 	/* border: 1px solid black; */
 	/* margin: 0.75% 0 0.75% 0%; */
 	background-image: url("../media/about.jpg");
+	background-color: #feffff;
 }
 
 
@@ -58,7 +59,7 @@ body {
 }
 
 .about h1, .education h1, .experience h1 {
-	color: white;
+	color: #feffff;
 	font-size: 30px;
 	margin-bottom: 10%;
 	position: absolute;
@@ -87,7 +88,7 @@ body {
 }
 
 .text {
-	color: white;
+	color: #feffff;
 }
 
 @media screen and (max-width: 1024px) {
@@ -111,191 +112,3 @@ body {
 		background-position: 50% 25%;
 	}
 }
-
-
-/*  */
-/* <header> */
-/*  */
-
-/* header {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	padding: 30px 30px;
-	border-bottom: 1px solid #bebebe ;
-	height: 10vh;
-}
-
-.logo {
-	font-weight: 1000;
-	font-size: 36px;
-	color: black;
-	text-decoration: none;
-	cursor: pointer;
-	margin-right: auto;
-}
-
-
-li, a, button {
-	font-weight: 500;
-	font-size: 16px;
-	color: black;
-	text-decoration: none;
-}
-
-.nav-links {
-	list-style: none;
-}
-
-.nav-links li {
-	display: inline-block;
-	padding: 0px 20px;
-}
-
-.nav-links li a {
-	transition: all 0.3s ease 0s;
-}
-
-.nav-links li a:hover {
-	color: #bebebe;
-}
-
-button {
-	color: white;
-	margin-left: 20px;
-	padding: 9px 25px;
-	background-color: rgba(0, 0, 0, 1);
-	border: none;
-	border-radius: 50px;
-	cursor: pointer;
-	transition: all 0.3s ease 0s;
-}
-
-button:hover {
-	background-color: rgba(190, 190, 190, 0.8);
-} */
-
-/*  */
-/* <div class="homepage"> */
-/*  */
-
-/* .homepage {
-	flex-grow: 1;
-	border: 2px solid black;
-	height: ;
-}
-
-.homepage .container {
-	text-align: center;
-	display: flex;
-	justify-content: space-between;
-	height: 100%;
-	margin: 20px 20px;
-	border: 1px solid black;
-}
-
-.homepage .container div {
-	width: 23vw;
-	overflow: hidden;
-}
-
-.homepage .container div img {
-	height: 100%;
-}
-
-.text-wrapper {
-	width: 100%;
-	position: relative;
-	margin-top: -40%;
-}
-
-.text-wrapper h1 {
-	text-align: center;
-	color: white;
-	font-size: 2.5vw;
-} */
-
-
-
-
-
-
-
-
-/* .col img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-} */
-
-
-/*
-.about {
-	position: relative;
-	background-image: url("../media/about.jpg");
-	background-size: contain;
-	background-position: center center;
-
-} */
-
-
-
-
-
-/* .title {
-	border: 1px solid black;
-	font-size: 6.5rem;
-	font-weight: 1000;
-	text-align: left;
-}
-
-
-nav {
-	border: 1px solid black;
-	text-align: left;
-	font-size: 1.5rem;
-	position: fixed;
-}
-
-nav a {
-	border: 1px solid black;
-	display: block;
-	margin-left: 1rem;
-	margin-bottom: 1rem;
-	height: fit-content;
-	width: fit-content;
-	text-decoration: none;
-	color: white;	
-	transition-duration: 0.5s;
-	transition-property: color;
-}
-
-a:hover {
-	color: lightseagreen;
-}
-
-.background {
-	border: 10px solid black;
-	height: 100vh;
-	width: auto;
-	min-height: 748px;
-	min-width: 1008px;
-	overflow: hidden;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.background img {
-	z-index: -1;
-	height: auto;
-	width: 100%;
-} */
-
-/* @media only screen and (max-width: 1008px) {
-	.background img {
-		z-index: -1;
-		height: 100%;
-		width: auto;
-	}
-} */

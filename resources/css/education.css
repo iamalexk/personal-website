@@ -9,7 +9,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-	color: white;
+	color: #feffff;
 }
 
 .education h1 {
@@ -65,8 +65,8 @@ h1, h2, h3, h4 {
 	display: block;
 	width: 20px;
 	height: 20px;
-	border-bottom: 3px solid white;
-	border-right: 3px solid white;
+	border-bottom: 3px solid #feffff;
+	border-right: 3px solid #feffff;
 	transform: rotate(45deg);
 	animation: animate 2.5s infinite;
 }
@@ -236,15 +236,3 @@ h1, h2, h3, h4 {
 		border: 5px solid #FFCB05;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
